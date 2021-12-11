@@ -1,0 +1,251 @@
+/* reset css 5 */
+* {margin:0; padding:0;}
+body {font-size:12px; font-family:"맑은 고딕", sans-serif;}
+ul {list-style:none}
+img {border:0;}
+a {text-decoration:none; color:inherit;}
+
+
+/*메인 페이지*/
+#header {width:100%; height:120px; background:#fff; 
+    display:flex;  /*자식요소의 정렬을 수평정렬함.*/
+    justify-content:space-between;  /*자식요소의 여백을 좌우에 맞추고 사이여백을 균등하게 함.*/
+}
+
+#header .logo {margin-top:20px; margin-left:50px; box-sizing: border-box; }
+
+#header .nav {display:flex; margin-top:48px;}
+#header .nav li {width: 150px; }
+#header .nav li a {color:#9a6f6b; font-size:30px; display:block; 
+    font-family: sandoll 북;
+    width:100%; height:30px; text-align:center; line-height:35px; }
+#header .nav li a:hover {text-decoration: underline;}
+
+#header .icon {display:flex; margin-top:35px; margin-right:35px;}
+#header .icon li {width:50px; height:50px; 
+                  margin-right:10px; text-align:center; line-height:50px; }
+#header .icon li a {}
+#header .icon li a:hover {}
+
+
+
+#main_visual {width:100%; height: 800px; background:#fff;
+                border-radius: 30px 0 0 0;}
+#main_visual video {width:100%; height:100%;} /*부모요소에 이미지를 꽉 채움*/
+
+
+#container {width:1200px; margin:80px auto;}
+
+#container .section1 {margin-bottom:120px;}
+#container .section1 h1 {font-size:24px; font-weight:600; color:#000; margin-bottom:10px;}
+#container .section1 .magazine {width:100%; height:450px; 
+                display:flex; /*자식요소 수직정렬을 수평정렬로 변경함.*/
+                justify-content:space-between; /*자식요소들의 여백을 균등하게 함.*/
+}
+
+.magazine li {width:31%; position:relative;}
+
+.magazine li .picture {width:100%; height:450px; overflow: hidden; }
+.magazine li .picture img {width:100%; height:100%;} /*부모요소에 이미지를 꽉 채움*/
+
+.magazine li .text {position:absolute; left:0; bottom:0; background:rgba(0,0,0,0.5);
+                    width:100%; padding:20px; box-sizing: border-box;                    
+}
+.magazine li .text h2 {color:#fff; font-size:22px; font-weight: 600; margin-bottom:15px;}
+.magazine li .text p {color:#fff; font-size:16px;}
+
+
+/*이미지에 마우스를 올리면 이미지가 커지는 애니메이션 효과*/
+.magazine li .picture img {cursor:pointer}
+.magazine li .picture:hover img {transition:all 0.2s; transform:scale(1.1);}
+
+
+
+#container .section2 {}
+#container .section2 h1 {font-size:24px; font-weight:600; color:#000; margin-bottom:10px;}
+#container .section2 .map {width:100%; height:400px; background:#ccc;}
+
+
+
+
+#footer {width:100%; height:100px; border-top:1px solid #333; text-align:center;
+            padding-top:20px; box-sizing: border-box; background:#454a56;}
+#footer .my {font-size:16px; font-weight: 600; line-height: 30px; color:#fff;}
+#footer .address {font-size:12px; color:#ccc;}
+#footer .copyright {font-size:12px; color:#80a0d4;}
+
+
+
+
+/* sub01 css-------------------------------------------- */
+
+#sub01_visual {
+    width: 100%;
+    height: 250px; 
+    background-image: url(../img/sub01_bg.jpeg); /*배경이미지의 파일 경로 설정*/
+    background-position: center top;             /*배경이미지의 위치를 중앙정렬*/
+    background-size: cover;                      /*배경이미지의 크기를 부모박스에 꽉 차게 설정*/
+}
+
+#sub01 {}
+#sub01 .sub01_title {
+    font-size: 36px; font-weight: 700; color: #000; text-align: center; 
+    margin-top:100px; margin-bottom: 70px;}
+
+#sub01 .sub01_contents {
+    width: 1200px; 
+    margin: 0 auto 100px auto;  /*박스를 가운데 정렬, 마진값을 4개: 상우하좌*/}
+
+
+
+/* sub01 css-------------------------------------------- */
+
+#sub01_visual {
+    width: 100%;
+    height: 250px; 
+    background-image: url(../img/sub01_bg.jpeg); /*배경이미지의 파일 경로 설정*/
+    background-position: center top;             /*배경이미지의 위치를 중앙정렬*/
+    background-size: cover;                      /*배경이미지의 크기를 부모박스에 꽉 차게 설정*/}
+
+#sub01 {}
+#sub01 .sub01_title {
+    font-size: 36px; font-weight: 700; color: #000; text-align: center; 
+    margin-top:100px; margin-bottom: 70px;}
+
+#sub01 .sub01_contents {
+    width: 1200px; 
+    margin: 0 auto 100px auto;  /*박스를 가운데 정렬, 마진값을 4개: 상우하좌*/}
+
+    /* 매거진 목록 디자인 */
+.sub01_magazine {
+        width:100%; 
+        display:flex; /*자식요소 수직정렬을 수평정렬로 변경함.*/
+        justify-content:space-between; /*자식요소들의 여백을 균등하게 함.*/
+        flex-wrap: wrap;} /* 자식요소가 한줄이 넘치면 자동 줄바꿈 */
+
+.sub01_magazine li {width:31%; position:relative; margin-bottom: 30px;}
+
+.sub01_magazine li .picture {width:100%; height:450px; overflow: hidden; }
+.sub01_magazine li .picture img {width:100%; height:100%;} /*부모요소에 이미지를 꽉 채움*/
+
+.sub01_magazine li .text {position:absolute; left:0; bottom:0; background:rgba(0,0,0,0.5);
+            width:100%; padding:20px; box-sizing: border-box;                    }
+.sub01_magazine li .text h2 {color:#fff; font-size:22px; font-weight: 600; margin-bottom:15px;}
+.sub01_magazine li .text p {color:#fff; font-size:16px;}
+
+
+    /*이미지에 마우스를 올리면 이미지가 커지는 애니메이션 효과*/
+.sub01_magazine li .picture img {cursor:pointer}
+.sub01_magazine li .picture:hover img {transition:all 0.2s; transform:scale(1.1);}
+
+    
+
+
+    
+/* sub02 css-------------------------------------------- */
+
+    #sub02_visual {
+        width: 100%;
+        height: 250px; 
+        background-image: url(../img/sub02_bg.jpeg); /*배경이미지의 파일 경로 설정*/
+        background-position: center top;             /*배경이미지의 위치를 중앙정렬*/
+        background-size: cover;                      /*배경이미지의 크기를 부모박스에 꽉 차게 설정*/}
+
+    #sub02 {}
+    #sub02 .sub02_title {
+        font-size: 36px; font-weight: 700; color: #000; text-align: center; 
+        margin-top:100px; margin-bottom: 70px;}
+
+    #sub02 .sub02_contents {
+        width: 1200px; 
+        margin: 0 auto 100px auto;  /*박스를 가운데 정렬, 마진값을 4개: 상우하좌*/}
+
+    .story_box {width: 100%; height: 280px; display: flex; margin-bottom: 40px;}
+    .story_box .yutube { width: 500px; height: 280px; margin-right: 40px;}
+    .story_box .story_text {width: 660px; height: 280px;}
+    .story_box .story_text .story_title {font-size: 30px; font-weight: 700; margin-bottom: 50px;}
+    .story_box .story_text .story_desc {font-size: 20px; margin-bottom: 30px;}
+    .story_box .story_text .date {font-size: 12px;}
+
+
+
+/* sub03 css-------------------------------------------- */
+
+    #sub03_visual {
+        width: 600px;
+        height: 800px; 
+        background-image: url(../img/AT.jpg); /*배경이미지의 파일 경로 설정*/
+        background-size: cover;                      /*배경이미지의 크기를 부모박스에 꽉 차게 설정*/}
+
+    #sub03 {}
+    #sub03 .sub03_title {
+        font-size: 36px; font-weight: 700; color: #000; text-align: center; 
+        margin-top:100px; margin-bottom: 70px;}
+
+    #sub03 .sub03_contents {
+        width: 1200px; 
+        margin: 0 auto 100px auto;  /*박스를 가운데 정렬, 마진값을 4개: 상우하좌*/}
+
+
+    .product_box  {width: 1200px; margin-bottom: 100px;}
+    .product_box .category_title {font-size: 26px; color: #023586; line-height: 50px;
+                                    border-bottom: 2px solid #023586; margin-bottom: 80px; }
+    .product_box .category_list {width: 1200px; display: flex; justify-content: space-between;}
+    .product_box .category_list li {width: 23%;}
+    .product_box .category_list li .picture {width: 100%; margin-bottom: 30px;} /*부모를 기준으로 너비를 꽉차게*/
+    .product_box .category_list li img {width: 100%;} /*부모요소를 기준으로 이미지를 꽉차게*/
+    .product_box .category_list li .name {text-align: center; font-size: 14px; font-weight: 600;}
+
+/* sub04 css-------------------------------------------- */
+
+    #sub04_visual {
+        width: 100%;
+        height: 250px; 
+        background-image: url(../img/sub04_bg.jpeg); /*배경이미지의 파일 경로 설정*/
+        background-position: center top;             /*배경이미지의 위치를 중앙정렬*/
+        background-size: cover;                      /*배경이미지의 크기를 부모박스에 꽉 차게 설정*/}
+
+    #sub04 {}
+    #sub04 .sub04_title {
+        font-size: 36px; font-weight: 700; color: #000; text-align: center; 
+        margin-top:100px; margin-bottom: 70px;}
+
+    #sub04 .sub04_contents1 {
+        width: 1200px; 
+        height: 500px; 
+        margin: 0 auto 100px auto;  /*박스를 가운데 정렬, 마진값을 4개: 상우하좌*/}
+
+        .video_title {font-size: 30px; font-weight: 600; margin-bottom: 40px; text-align: center;}
+        .video_box {width: 800px; height: 450px; background: #Fcc; margin: 0 auto;} /*16:9=800:450*/
+        .video_box iframe {width: 100%; height: 100%;} /*영상을 부모박스에 꽉 차게*/
+
+
+    #sub04 .sub04_contents2 {
+        width: 100%; 
+        height: 700px; 
+        background: #ccc;}
+
+        .package_title {font-size: 30px; font-weight: 600; margin-bottom: 40px; text-align: center;}
+
+        .package_list  {width: 1200px; margin: 0 auto; display: flex; justify-content: space-between;}
+        .package_list li {width: 31%; border: 1px solid #999; background: #fff; padding: 2%; box-sizing: 
+                            border-box; border-radius: 15px } /*3단 , 33.33333% =>31%*/
+        .package_list li .picture {width: 100%; margin-bottom: 30px;}
+        .package_list li .picture img {width: 100%;}
+        .package_list li .title {font-size: 20px; text-align: center; color: #666; font-weight: 600; margin-bottom: 40px;}
+        .package_list li .descript {text-align: center; font-size: 14px; color: #666; line-height: 20px; margin-bottom: 20px;}
+
+
+
+    #sub04 .sub04_contents3 {
+        width: 1200px; 
+        height: 400px; 
+        margin: 0 auto 100px auto;  /*박스를 가운데 정렬, 마진값을 4개: 상우하좌*/} 
+
+
+        .review_title {font-size: 30px; font-weight: 600; margin-bottom: 40px; text-align: center;}
+
+        .review_subject {font-size: 20px; font-weight: 600; border-bottom: 1px solid #666; margin-bottom: 40px; 
+                            padding-bottom: 10px; color: #023586;}
+        .review_box { font-size: 16px; line-height: 22px; color: #555;}
+    
